@@ -17,7 +17,7 @@ body {
 h1, h2, h3 {
     margin:0px;
     padding:0px;
-    color:#8DC63F;
+    color:#3b3b3b;
 }
 
 h1 {
@@ -37,23 +37,69 @@ a {
 }
 
 a:hover {
-    color:#AEAEAE;
+    color:#0000ff;
+}
+
+figure {
+    margin-left:0px;
+    margin-top:25px;
+    padding:25px;
+    background-color:#5d8aa8;
+    border-radius:6px;
+    display: inline-block;
+    box-shadow:6px 6px 10px #000000;
+}
+
+figcaption {
+    text-align: center;
+    text-size: 1.2em;
+    color:#ffffff;
+    
+}
+
+main {
+    width:1200px;
+    overflow:hidden;
+    margin:20px auto;
 }
 
 /*=====================    HEADER STYLER   ==================*/
 
 header {
     height:200px;
-    background-color:#F4F4F4;
+    background-color:#AEAEAE;
 }
 
 #logo {
-    color:#AEAEAE;
+    color:#0000ff;
+    position: relative;
+    top:20px;
+    left:20px;
 }
 #logo:hover {
     color:#FF7900;
 }
 
+#top_button {
+  color: #FFFFFF;
+  text-decoration:none;
+  padding: 24px 48px;
+  bottom:0px;
+  top:57px;
+  right:48px;
+  border-radius: 6px 6px 0px 0px;
+  background-color:#000173;
+  position:relative;
+  float:right;
+  clear:both;
+}
+
+#top_button:hover {
+    background-color:#FF7900;
+    color:#0000ff;
+    font-weight:900;
+    text-shadow:1px 1px #000000;
+}
 /*========================   BANNER STYLES   =====================*/
 
 #banner {
@@ -69,6 +115,94 @@ header {
     color:#FFFFFF;
     font-size:6em;
     text-align:center;
-    text-shadow:6px 6px #000000;
+    text-shadow:6px -4px 3px #000000;
 }
+
+/*==========================NAVIGATION STYLES=========================*/
+
+#menu {
+    position: absolute;
+    top:23px;
+    right:20px;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin:0px 12px;
+}
+
+.currentPage {
+    color:#0000ff;
+}
+
+/*==========================THREE COLUMN STYLES========================*/
+
+.column1, .column2, .column3 {
+    width:384px;
+}
+
+.column1, .column2 {
+    float:left;
+    margin-right:24px;
+    
+}
+
+.column3 {
+    float:left;
+}
+
+.column1 h2, .column2 h2, .column3 h2 {
+    font-size:3em;
+    font-weight:700;
+    text-align:center;
+    margin:15px 0px;
+    /*???????*/
+}
+
+.column1 p, .column2 p, .column3 p {
+    padding:0px;
+    text-align:justify;
+    
+}
+
+.column1 span, .column2 span, .column3 span {
+    background-color:#5d8aa8;
+    color:#ffffff;
+    display:block;
+    font-size:1.75em;
+    font-weight:600;
+    text-align:center;
+    padding:15px 0px;
+}
+
+.button {
+    Background-color:#ff7900;
+    color:#333333;
+    padding:6px 12px;
+    border-radius:6px;
+}
+
+.button:hover {
+    background-color:#0000ff;
+    color:#ff7900;
+}
+
+/*==============================FOOTER STYLES===============================*/
+
+footer {
+    height:50px;
+    background-color:#AEAEAE;
+    padding:10px;
+    color:#ffffff;
+    text-align:center;
+}
+#footer {
+    color:#ffffff;
+}
+
+
+/*1200PX WIDTH OF MAIN TAG
+IMAGES 384 X 3 = 1152PX
+MARGINS 24PX X 2=48PX
+TOTAL = 1200 PX*/
 
