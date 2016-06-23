@@ -1,5 +1,8 @@
 /*GLOBAL STYLES*/
 
+/*====================================GOOGLE FONTS==================================*/
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Yanone+Kaffeesatz|Shadows+Into+Light|Fira+Sans|Anton);
+
 html, body {
     height:100%;
 }
@@ -22,18 +25,30 @@ h1, h2, h3 {
 
 h1 {
     font-size:2em;
+    font-family: 'Amatic SC', cursive;
     /*font-size:6em;*/
 }
 
+h2 {
+    font-family: 'Amatic SC', cursive;
+}
+
 p {
-    color:#999999;
+    color:#000000;
     margin:15px 0px;
     line-height:18px;
+    font-family: 'Amatic SC', cursive;
+    font-weight:700;
+    font-size:1.25em;
 }
 
 a {
     color:#df2121;
     text-decoration:none;
+}
+
+span {
+    font-family: 'Amatic SC', cursive;
 }
 
 a:hover {
@@ -54,6 +69,7 @@ figcaption {
     text-align: center;
     text-size: 1.2em;
     color:#ffffff;
+    font-family: 'Amatic SC', cursive;
     
 }
 
@@ -61,6 +77,14 @@ main {
     width:1200px;
     overflow:hidden;
     margin:20px auto;
+}
+
+b, strong {
+    color:#FF7900;
+}
+
+mark {
+    padding:0px 13px
 }
 
 /*=====================    HEADER STYLER   ==================*/
@@ -80,26 +104,7 @@ header {
     color:#FF7900;
 }
 
-#top_button {
-  color: #FFFFFF;
-  text-decoration:none;
-  padding: 24px 48px;
-  bottom:0px;
-  top:57px;
-  right:48px;
-  border-radius: 6px 6px 0px 0px;
-  background-color:#000173;
-  position:relative;
-  float:right;
-  clear:both;
-}
 
-#top_button:hover {
-    background-color:#FF7900;
-    color:#0000ff;
-    font-weight:900;
-    text-shadow:1px 1px #000000;
-}
 /*========================   BANNER STYLES   =====================*/
 
 #banner {
@@ -175,30 +180,8 @@ header {
     padding:15px 0px;
 }
 
-.button {
-    Background-color:#ff7900;
-    color:#333333;
-    padding:6px 12px;
-    border-radius:6px;
-}
 
-.button:hover {
-    background-color:#0000ff;
-    color:#ff7900;
-}
 
-/*==============================FOOTER STYLES===============================*/
-
-footer {
-    height:50px;
-    background-color:#AEAEAE;
-    padding:10px;
-    color:#ffffff;
-    text-align:center;
-}
-#footer {
-    color:#ffffff;
-}
 
 
 /*1200PX WIDTH OF MAIN TAG
@@ -206,3 +189,188 @@ IMAGES 384 X 3 = 1152PX
 MARGINS 24PX X 2=48PX
 TOTAL = 1200 PX*/
 
+/*===================================BUTTON STYLES=============================*/
+
+.button {
+    Background-color:#ff7900;
+    color:#333333;
+    padding:6px 12px;
+    border-radius:6px;
+    font-family: 'Amatic SC', cursive;
+    font-weight:700;
+    text-size: 1.25em;
+}
+
+.button:hover {
+    background-color:#0000ff;
+    color:#ff7900;
+}
+
+#top_button {
+  color: #FFFFFF;
+  text-decoration:none;
+  padding: 24px 48px;
+  bottom:0px;
+  top:57px;
+  right:48px;
+  border-radius: 6px 6px 0px 0px;
+  background-color:#000173;
+  position:relative;
+  float:right;
+  clear:both;
+}
+
+#top_button:hover {
+    background-color:#FF7900;
+    color:#0000ff;
+    font-weight:900;
+    text-shadow:1px 1px #000000;
+}
+
+/*=============================ABOUT ME===============================*/
+
+.asideLeft {
+    float:left;
+    width:384px;
+    margin-right:24px;
+    
+}
+
+.asideRight {
+    float:right;
+    width:384px;
+    margin-left:24px;
+    
+}
+
+.aboutMe {
+    float:right;
+    width:735px;
+    margin-top:50px;
+    
+}
+
+.aboutMe p {
+    text-align:justify;
+    
+}
+
+.blogPost {
+    display:inline-block;
+    margin:25px 0px;
+}
+
+/*==============================FOOTER STYLES===============================*/
+
+footer {
+    /*height:125px;*/
+    background-color:#AEAEAE;
+    padding:30px 0px;
+    border-top:solid 4px #FF7900;
+    color:#ffffff;
+    text-align:center;
+    margin-top:20px;
+}
+
+footer p {
+    color:#FFFFFF;
+}
+#footer {
+    color:#ffffff;
+}
+
+/*============================SOCIAL STYLES==================================*/
+
+.social a {
+    color:#FFFFFF;
+}
+
+.fa {
+    background-color: rgb(141, 198, 63);
+    border:solid 3px #FFFFFF;
+    font-size:2em !important;
+    border-radius: 20%;
+    width:28px;
+    height:28px;
+    padding:12px;
+    margin:0px 20px;
+}
+
+.fa-facebook {
+     background-color: #3b5998;   
+}
+
+.fa-facebook:hover {
+    background-color:#476bb8; 
+}
+
+.fa-twitter {
+    background-color: #55acee;
+}
+
+.fa-twitter:hover {
+    background-color: #75bbf0;
+}
+
+.fa-instagram {
+    background-color: #e95950;
+}
+
+.fa-instagram:hover {
+    background-color: #ee7f77;
+}
+
+.fa-linkedin {
+    background-color: #007bb5;
+}
+
+.fa-linkedin:hover {
+    background-color: #009de6;
+    
+}
+.fa-github {
+    background-color: #000000;
+}
+
+.fa-github:hover {
+    background-color: #666666;
+}
+
+/*==============================MISC STYLES============================*/
+
+#video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0px;
+    overflow: hidden;
+}
+
+#video iframe, #video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+}
+
+/*===================MAP================*/
+
+.maps {
+    width: 90%;
+    height: 350px;
+    margin: auto;
+    display: block;
+    
+   
+}
+
+#wufoo-zl02dkl1pc27il {
+    
+    padding:25px;
+    Background-color:#AEAEAE;
+    border:solid 3px #000000;
+    border-radius: 8px;
+    width:90%;
+    margin: 25px aut;
+}
